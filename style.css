@@ -1,0 +1,95 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(85, 243, 130);
+    color: black;
+}
+h1{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 25px;
+   margin: 50px 0;
+}
+.btn{
+    height: 170px;
+    width: 170px;
+    border: 7px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.yellow{
+    background-color: #f99b45;
+}
+.red{
+    background-color: #d95980;
+}
+.green{
+    background-color: #369cbb;
+ }
+.purple{
+    background-color: #4b71e3;
+}
+
+.flash{
+    background-color: #fff;
+}
+.userFlash{
+    background-color: green;
+}
+.start-game-btn{
+    padding: 8px 18px;
+    background-color: palevioletred;
+    color: #fff;
+    font-size: 1.2rem; 
+    border: none;
+    outline: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* @media Queries  */
+@media (max-width:400px){
+    h2{
+      font-size: 1.2rem;
+    }
+   .btn{
+      width: 150px;
+      height: 150px;
+    }
+}
+
+@media (max-width:340px){
+    h2{
+     font-size: 1rem;
+    }
+   .box-container{
+      gap: 15px;
+    }
+    .btn{
+       width: 120px;
+       height: 120px;
+       border: 5px solid black;
+    }
+}
+        
